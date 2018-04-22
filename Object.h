@@ -24,7 +24,7 @@ public:
 	void mutate(float mutationRate);
 
 	//makes AI play the game. Parametr tells if it should be visible, or only make score
-	double graj(bool = 0);
+	double graj(bool = 0,double delta=0.001);
 
 	//use in mutations
 	Object* crossover(Object* d);

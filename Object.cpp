@@ -24,9 +24,9 @@ void Object::mutate(float mutationRate)
 	brain->mutate(mutationRate);
 }
 
-double Object::graj(bool visibility)
+double Object::graj(bool visibility, double delta)
 {
-	return gra->startGame(AI,visibility);
+	return gra->startGame(AI,visibility,delta);
 }
 
 Object* Object::crossover(Object* d)
